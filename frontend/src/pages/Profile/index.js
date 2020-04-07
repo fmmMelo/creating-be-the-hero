@@ -79,7 +79,7 @@ async function handleDeleteIncident(id)
 
             <h1>Casos cadastrados</h1>
 
-            <p>{ incidents.length } caso(s) registrado(s)</p>
+            <p style={{margin: 8}}>{ incidents.length } caso(s) registrado(s)</p>
 
             <p id="message-incidents"></p>
             
