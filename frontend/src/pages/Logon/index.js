@@ -28,9 +28,9 @@ export default function Logon()
             localStorage.setItem('ongName', response.data.name);
 
             swal({
-                title: "Logon feito!",
-                text: `Você está logado! Bem vindo(a)! ${response.data.name}`,
-                icon: "success",
+                title: `Olá ${response.data.name}!`,
+                text: `Você entrou! `,
+                icon: LogoImg,
             });
 
             history.push('/profile');
@@ -59,7 +59,7 @@ export default function Logon()
                 <input 
                     placeholder="Sua ID"
                     value={id}
-                    onChange={e => setId(e.target.value)}    
+                    onChange={e => setId(e.target.value)}
                 />
                 <button className="button" type="submit">Entrar</button>
 

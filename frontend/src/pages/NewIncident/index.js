@@ -78,13 +78,15 @@ export default function NewIncident()
                   <input 
                     placeholder="Título do caso"
                     value = {title}
-                    onChange = {e => setTitle(e.target.value)}                
+                    onChange = {e => setTitle(e.target.value)}
+                    required               
                 />
 
                  <textarea 
                     placeholder="Descrição do caso"
                     value = {description}
                     onChange = {e => setDescription(e.target.value)}
+                    required
                 />
 
                   <button type="submit" className="button">Enviar caso</button>
